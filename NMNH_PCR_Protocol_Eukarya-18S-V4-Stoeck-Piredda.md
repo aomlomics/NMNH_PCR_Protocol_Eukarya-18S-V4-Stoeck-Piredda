@@ -1,7 +1,7 @@
 ---
 # MIOP terms
 methodology_category: Omics Analysis
-project: # eDNA collected by the NOAA ship Okeanos Explorer
+project: NOAA Ocean Exploration seawater eDNA metabarcoding
 purpose: PCR [OBI:0000415]
 analyses: PCR [OBI:0000415]
 geographic_location: Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853], Pacific Ocean [GAZ:00000360]
@@ -9,55 +9,55 @@ broad_scale_environmental_context: marine biome [ENVO:00000447], marine photic z
 local_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
 environmental_medium: sea water [ENVO:00002149], polymerase chain reaction [OBI:0000415]
 target: mtCOI [NCIT:C105370]
-creator: Steve Auscavitch
+creator: Steve Auscavitch, Allen Collins
 materials_required: vortexer [OBI:0400118], PCR instrument [OBI:0000989], agarose gel electrophoresis system [OBI:0001134]
 skills_required: sterile technique, pipetting skills, standard molecular technique
-time_required: 180 minutes (integer)
+time_required: 180 minutes
 personnel_required: 1
 language: en
-issued: # 2025-09-03
+issued: 2025-09-03
 audience: scientists
-publisher: # National Museum of Natural History, Smithsonian Institution
+publisher: Smithsonian National Museum of Natural History
 hasVersion: 1
 license: CC0 1.0 Universal
 maturity level: mature
 
 # FAIRe terms
-pcr_0_1: # 1
-thermocycler: # Bio-Rad T100 Thermocycler
-amplificationReactionVolume: # 10
-assay_name: # Eukarya-18S-V4-Stoeck-Piredda
-assay_validation: # not provided
-targetTaxonomicAssay: # Eukarya
-targetTaxonomicScope: # phytoplankton
-target_gene: # 18s rRNA (SSU eukaryote)
-target_subfragment: # # not provided
-ampliconSize: # 270
-pcr_primer_forward: # 18S-V4-TAReuk454FWD1
-pcr_primer_reverse: # 18S-V4-TAReuk454REV3.Piredda
-pcr_primer_name_forward: # CCAGCASCYGCGGTAATTCC
-pcr_primer_name_reverse: # ACTTTCGTTCTTGATYRATGA
-pcr_primer_reference_forward: # https://doi.org/10.1111/j.1365-294X.2009.04480.x
-pcr_primer_reference_reverse: # https://doi.org/10.1093/femsec/fiw200
-pcr_primer_vol_forward: # 0.3
-pcr_primer_vol_reverse: # 0.3
-pcr_primer_conc_forward: # 10
-pcr_primer_conc_reverse: # 10
-probeReporter: # not applicable
-probeQuencher: # not applicable
-probe_seq: # not applicable
-probe_ref: # not applicable
-probe_conc: # not applicable
-commercial_mm: # 2X GoTaq Hot Start Master Mix
-custom_mm: # Triplicate PCR reactions were run in 10 uL reaction volumes, with 1.0 uL of environmental DNA template, 5.0 uL of 2X GoTaq Hot Start, 3.3 uL of sterile water, 0.1 uL of Bovine Serum Albumin (BSA) (0.2 mg/mL), and 0.3 uL of each primer (10 uM)
-pcr_dna_vol: # 1.0
-pcr_rep: # 3
-nucl_acid_amp: # not applicable
-pcr_cond: # initial denaturation:95_5;denaturation:95_0.5;annealing:55_0.5;elongation:72_0.5;final elongation:72_5;35
-annealingTemp: # 46
-pcr_cycles: # 35
-pcr_analysis_software: # not provided
-pcr_method_additional: # not provided
+pcr_0_1: 1
+thermocycler: Bio-Rad T100 Thermocycler
+amplificationReactionVolume: 10
+assay_name: Eukarya-18S-V4-Stoeck-Piredda
+assay_validation: not provided
+targetTaxonomicAssay: Eukarya
+targetTaxonomicScope: phytoplankton
+target_gene: 18s rRNA (SSU eukaryote)
+target_subfragment: not provided
+ampliconSize: 270
+pcr_primer_forward: 18S-V4-TAReuk454FWD1
+pcr_primer_reverse: 18S-V4-TAReuk454REV3.Piredda
+pcr_primer_name_forward: CCAGCASCYGCGGTAATTCC
+pcr_primer_name_reverse: ACTTTCGTTCTTGATYRATGA
+pcr_primer_reference_forward: https://doi.org/10.1111/j.1365-294X.2009.04480.x
+pcr_primer_reference_reverse: https://doi.org/10.1093/femsec/fiw200
+pcr_primer_vol_forward: 0.3
+pcr_primer_vol_reverse: 0.3
+pcr_primer_conc_forward: 10
+pcr_primer_conc_reverse: 10
+probeReporter: not applicable
+probeQuencher: not applicable
+probe_seq: not applicable
+probe_ref: not applicable
+probe_conc: not applicable
+commercial_mm: 2X GoTaq Hot Start Master Mix
+custom_mm: Triplicate PCR reactions were run in 10 uL reaction volumes, with 1.0 uL of environmental DNA template, 5.0 uL of 2X GoTaq Hot Start, 3.3 uL of sterile water, 0.1 uL of Bovine Serum Albumin (BSA) (0.2 mg/mL), and 0.3 uL of each primer (10 uM)
+pcr_dna_vol: 1.0
+pcr_rep: 3
+nucl_acid_amp: not applicable
+pcr_cond: initial denaturation:95_5;denaturation:95_0.5;annealing:55_0.5;elongation:72_0.5;final elongation:72_5;35
+annealingTemp: 46
+pcr_cycles: 35
+pcr_analysis_software: not provided
+pcr_method_additional: not provided
 ---
 
 # NMNH PCR Protocol 18S rRNA V4 (Stoeck-Piredda)
@@ -80,7 +80,7 @@ pcr_method_additional: # not provided
 | PREPARED BY  | AFFILIATION  | ORCID        | DATE       |
 | ------------ | ------------ | ------------ | ---------- |
 | Steven Auscavitch | National Museum of Natural History, Smithsonian Institution | <https://orcid.org/0000-0001-5777-4814> | 2025-09-03 |
-| Allen Collins | NOAA NSL; Smithsonian Institution | <https://orcid.org/0000-0002-3664-9691> | 2025-09-03 |
+| Allen Collins | NOAA National Systematics Laboratory, Smithsonian Institution | <https://orcid.org/0000-0002-3664-9691> | 2025-09-03 |
 
 ### Related Protocols
 
