@@ -60,7 +60,7 @@ pcr_analysis_software: # not provided
 pcr_method_additional: # not provided
 ---
 
-# Protocol Template - PCR
+# NMNH PCR Protocol 18S rRNA V4 (Stoeck-Piredda)
 
 ## PROTOCOL INFORMATION
 
