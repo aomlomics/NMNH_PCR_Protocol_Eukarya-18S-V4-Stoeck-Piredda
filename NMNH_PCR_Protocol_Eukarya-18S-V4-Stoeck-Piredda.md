@@ -84,10 +84,24 @@ pcr_method_additional: not provided
 
 ### Related Protocols
 
+- This section contains protocols that should be known to users of this protocol.
+- Internal Protocols: Derivative or altered protocols, or other protocols in this workflow.
+- External Protocols: Protcols from manufacturers or other groups. 
+- Include the link to each protocol.
+- Include the version number (internal) or access date (external) of the protocol when it was accessed.
+
+#### Internal Protocols
+
 | PROTOCOL NAME | LINK         | VERSION      | RELEASE DATE | INTERNAL/EXTERNAL |
 | ------------- | ------------ | ------------ | ------------ | ----------------- |
-| OKEX PCI eDNA extraction | https://github.com/aomlomics/protocol-extract-dna-okex/blob/main/BeBoP_protocol_OKEX_NMNH_pcl_eDNA_extraction_20250501.md | 1.0 | 2024-03-01 | External |
-| OKEX COI eDNA Metabarcoding | https://github.com/aomlomics/protocol-extract-dna-okex/blob/main/BeBoP_protocol_OKEX_NMNH_PCR_COImetabar_20250903.md | 1.0 | 2025-09-03 | External |
+| AOML 'Omics Protocols | <https://github.com/aomlomics/protocols> | not applicable | ongoing |
+
+#### External Protocols
+
+| PROTOCOL NAME | LINK | ISSUER / AUTHOR | ACCESS DATE |
+| ------------ | ------------ | ------------ | ---------- |
+| Qubit™ dsDNA HS Assay Kit | https://documents.thermofisher.com/TFS-Assets/LSG/manuals/Qubit_dsDNA_HS_Assay_UG.pdf | Thermo Fisher Scientific | 2026-01-26 |
+| KAPA Pure Beads Manual | https://rochesequencingstore.com/wp-content/uploads/2022/07/KAPA-Pure-Beads-Technical-Data-Sheet.pdf | Roche | 2026-01-26 |
 
 ### Protocol Revision Record
 
@@ -167,8 +181,6 @@ This procedure can be conducted within 180 minutes, but is dependent on the numb
 | Gel Combs | Gel Electrophoresis Combs | Generic Brand | 8 | NA |
 | Magnetic Stand | DynaMag-96 Side Magnet (12331D) | ThermoFisher Scientific | 1 | NA |
 | Nucleic Acid Quantification | Qubit or Quant-IT Assay Readers | ThermoFisher Scientific | 1 kit(s) | Or other quantification assay |
-
-
 | **Consumable equipment** |
 | Gloves | Nitrile Gloves, Exam Grade, Powder-free | Varies | 1 box | Can be substituted with generic |
 | Hype-Wipe | CurrentTechnologies 9103 | Current Technologies | As needed | As needed |
@@ -181,7 +193,6 @@ This procedure can be conducted within 180 minutes, but is dependent on the numb
 | 200µL Filtered Tips | Filter Tips, 200µL | Mettler Toledo | As needed | Can be substituted with generic |
 | 10 ul Filtered tips | Pipette Tips, 10 uL | Mettler Toledo | As needed | Can be substituted with generic |
 | Clear Qubit Assay tubes | 0.5 mL thin-walled, polypropylene tubes | Invitrogen | 98 | Must be correct tubes to allow for fluorometer to read concentration |
-
 | **Chemicals** |
 | Surface Disinfectant | DNA Away | Thermo-Fisher | 1 bottle | As needed. Can be substituted with 10% bleach |
 | Ethanol (70%) | Varies | Varies | As needed | For surface and equipment cleaning |
