@@ -94,7 +94,7 @@ pcr_method_additional: not provided
 
 | PROTOCOL NAME | LINK         | VERSION      | RELEASE DATE | INTERNAL/EXTERNAL |
 | ------------- | ------------ | ------------ | ------------ | ----------------- |
-| AOML 'Omics Protocols | <https://github.com/aomlomics/protocols> | not applicable | ongoing |
+| AOML 'Omics Protocols | https://github.com/aomlomics/protocols | not applicable | ongoing |
 
 #### External Protocols
 
