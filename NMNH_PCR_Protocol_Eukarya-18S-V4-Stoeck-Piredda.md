@@ -1,4 +1,5 @@
 ---
+
 # MIOP terms
 methodology_category: omics analysis
 project: NOAA Ocean Exploration seawater eDNA metabarcoding
@@ -8,7 +9,7 @@ geographic_location: Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853
 broad_scale_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
 local_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
 environmental_medium: sea water [ENVO:00002149], polymerase chain reaction [OBI:0000415]
-target: mtCOI [NCIT:C105370]
+target: 18S Ribosomal RNA [NCIT:C48172]
 creator: Steve Auscavitch, Allen Collins
 materials_required: vortexer [OBI:0400118], PCR instrument [OBI:0000989], agarose gel electrophoresis system [OBI:0001134]
 skills_required: sterile technique, pipetting skills, standard molecular technique
@@ -18,46 +19,63 @@ language: en
 issued: 2025-09-03
 audience: scientists
 publisher: National Museum of Natural History
-hasVersion: 1
+hasVersion: 1.0.2
 license: CC0 1.0 Universal
 maturity level: mature
 
 # FAIRe terms
 pcr_0_1: 1
+inhibition_check_0_1: 0
+inhibition_check: not applicable
 thermocycler: Bio-Rad T100 Thermocycler
-amplificationReactionVolume: 10
 assay_name: Eukarya-18S-V4-Stoeck-Piredda
 assay_validation: not provided
 targetTaxonomicAssay: Eukarya
-targetTaxonomicScope: phytoplankton
+targetTaxonomicScope: protists
 target_gene: 18s rRNA (SSU eukaryote)
-target_subfragment: not provided
+target_subfragment: V4
 ampliconSize: 270
-pcr_primer_forward: 18S-V4-TAReuk454FWD1
-pcr_primer_reverse: 18S-V4-TAReuk454REV3.Piredda
-pcr_primer_name_forward: CCAGCASCYGCGGTAATTCC
-pcr_primer_name_reverse: ACTTTCGTTCTTGATYRATGA
+pcr_primer_forward: CCAGCASCYGCGGTAATTCC
+pcr_primer_reverse: ACTTTCGTTCTTGATYRATGA
+pcr_primer_name_forward: 18S-V4-TAReuk454FWD1
+pcr_primer_name_reverse: 18S-V4-TAReuk454REV3.Piredda
 pcr_primer_reference_forward: https://doi.org/10.1111/j.1365-294X.2009.04480.x
 pcr_primer_reference_reverse: https://doi.org/10.1093/femsec/fiw200
 pcr_primer_vol_forward: 0.3
 pcr_primer_vol_reverse: 0.3
 pcr_primer_conc_forward: 10
 pcr_primer_conc_reverse: 10
+pcr_dna_vol: 1.0
+amplificationReactionVolume: 10
 probeReporter: not applicable
 probeQuencher: not applicable
 probe_seq: not applicable
 probe_ref: not applicable
 probe_conc: not applicable
-commercial_mm: 2X GoTaq Hot Start Master Mix
-custom_mm: Triplicate PCR reactions were run in 10 uL reaction volumes, with 1.0 uL of environmental DNA template, 5.0 uL of 2X GoTaq Hot Start, 3.3 uL of sterile water, 0.1 uL of Bovine Serum Albumin (BSA) (0.2 mg/mL), and 0.3 uL of each primer (10 uM)
-pcr_dna_vol: 1.0
+commercial_mm: 2X GoTaq Hot Start Master Mix (Promega)
+custom_mm: not applicable
+block_seq: not applicable
+block_ref: not applicable
+block_taxa: not applicable
 pcr_rep: 3
-nucl_acid_amp: not applicable
+nucl_acid_amp: # use Zenodo DOI for this repository
 pcr_cond: initial denaturation:95_5;denaturation:95_0.5;annealing:55_0.5;elongation:72_0.5;final elongation:72_5;35
-annealingTemp: 46
+annealingTemp: 55
 pcr_cycles: 35
 pcr_analysis_software: not provided
-pcr_method_additional: not provided
+pcr_method_additional: Triplicate PCR reactions were run in 10 uL reaction volumes, with 1.0 uL of environmental DNA template, 5.0 uL of 2X GoTaq Hot Start, 3.3 uL of sterile water, 0.1 uL of Bovine Serum Albumin (BSA) (0.2 mg/mL), and 0.3 uL of each primer (10 uM).
+barcoding_pcr_appr: two-step PCR
+pcr2_thermocycler: not provided
+pcr2_dna_vol: not provided
+pcr2_amplificationReactionVolume: not provided
+pcr2_commercial_mm: not provided
+pcr2_custom_mm: not provided
+pcr2_cond: not provided
+pcr2_annealingTemp: not provided
+pcr2_cycles: not provided
+pcr2_analysis_software: not provided
+pcr2_method_additional: not provided
+
 ---
 
 # NMNH PCR Protocol 18S rRNA V4 (Stoeck-Piredda)
@@ -109,6 +127,7 @@ pcr_method_additional: not provided
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2025-09-03 | Initial release |
 | 1.0.1 | 2025-12-15 | Updated YAML front matter |
+| 1.0.2 | 2026-04-11 | Updated and corrected YAML front matter |
 
 ### Acronyms and Abbreviations
 
@@ -231,7 +250,6 @@ Quantification & dilution of DNA
 7. Place tubes/plate into a thermocycler and run the initial amplification PCR program (see PCR Cycling Program).
 8. After the PCR finishes, proceed directly to Gel Verification, or samples may be stored at 4°C for up to 3 days (or at -20°C for longer periods). 
 
-
 **Primers**: PCR primer sequences
 
 Note: Ensure that primer sequences come with the appropriate (e.g. Nextera or iTru) adapter sequences for your sequencing technology of choice. This should be decided upon beforehand, along with your sequencing facility and technology of choice. (ADD ADAPTER INFORMATION.)
@@ -239,7 +257,7 @@ Note: Ensure that primer sequences come with the appropriate (e.g. Nextera or iT
 | PCR Primer Name | Direction | Sequence (5’ -> 3’)|
 | ----- | ----- | ----- |
 | 18S-V4-TAReuk454FWD1 | forward | CCAGCASCYGCGGTAATTCC |
-| 18S-V4-TAReuk454REV3.Piredda | ACTTTCGTTCTTGATYRATGA |
+| 18S-V4-TAReuk454REV3.Piredda | reverse | ACTTTCGTTCTTGATYRATGA |
 
 **Reaction Mixture**: PCR reagents, volumes, initial and final concentrations
 
@@ -269,7 +287,7 @@ Initial PCR Amplification
 Gel verification (Recommended)
 1. Prepare a 1.5% agarose gel using 1X SB. Arrange combs to reflect the number of samples and replicates, including a space for ladder.
 2. Mix 2 µl PCR product with 2 µl 2X loading dye/10X GelRed. Load 4 uL of PCR product + loading dye/10X GelRed into each respective well. Gel should be immersed with 1X SB. Run gels for a 5-7 minutes at 125V.
-3. Product size should be ~430 bp for invertebrate metabarcoding COI primers, depending on your adapter and the presence of heterogeneity spacers, if included on the primer.
+3. Product size should be ~270 bp.
 4. Following Gel Verification, pool PCR replicates for each sample, omitting any volumes that had incorrect bands present. A full volume of the remaining product should be 24 uL (8 uL X 3 replicates). 
 5. Samples may be stored at 4°C for up to 3 days (or at -20°C for longer periods).
 
@@ -309,7 +327,8 @@ Not applicable.
 
 ## REFERENCES
 
-Not applicable.
+1. Stoeck, T., Bass, D., Nebel, M., Christen, R., Jones, M. D. M., Breiner, H.-W., & Richards, T. A. (2010). Multiple marker parallel tag environmental DNA sequencing reveals a highly complex eukaryotic community in marine anoxic water. Molecular Ecology, 19 Suppl 1, 21–31. https://doi.org/10.1111/j.1365-294X.2009.04480.x
+2. Piredda, R., Tomasino, M. P., D’Erchia, A. M., Manzari, C., Pesole, G., Montresor, M., Kooistra, W. H. C. F., Sarno, D., & Zingone, A. (2017). Diversity and temporal patterns of planktonic protist assemblages at a Mediterranean Long Term Ecological Research site. FEMS Microbiology Ecology, 93(1), fiw200. https://doi.org/10.1093/femsec/fiw200
 
 ## APPENDIX A: DATASHEETS
 
